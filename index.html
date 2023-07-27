@@ -12,35 +12,92 @@
 
   <script src="https://kit.fontawesome.com/5d3b19e49f.js" crossorigin="anonymous"></script>
 
+  <style>
+  
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f03333; 
+  color: #fff; 
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+
+.navbar-logo {
+  font-size: 20px; 
+}
+
+
+.navbar-search {
+  position: relative;
+}
+
+
+.navbar-search input[type="text"] {
+  padding: 5px 30px 5px 10px; 
+  border: none;
+  border-radius: 20px; 
+  outline: none;
+  background-color: #fff; 
+  color: #46403f; 
+  width:300px; 
+}
+
+.navbar-search i.fa-search {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 18px; 
+  color: #594747; 
+}
+.navbar-menu>ul>li{
+display: inline-block;
+margin-left: 50px;
+}
+
+.logo-container{
+  justify-content: center;
+}
+</style>
+
 </head>
 
 <body>
-  <header class="bg-red-500 rounded-3xl mx-2 mt-5">
-    <nav>
-      <div class="navbar">
-        <div class="navbar-start ml-7">
-          <div class="flex gap-4 text-white pl-3">
-            <p>Home</p>
-            <p>About Us</p>
-            <p>Shop</p>
-            <p>ALl Fruits</p>
-          </div>
-        </div>
-        <div class="navbar-center mr-5">
+  
+<header>
+    <nav class="navbar">
+      <div class="navbar-menu">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Shop</li>
+          <li>All Fruits</li>
+        </ul>
+      </div>
+      <div class="nav-logo-container">
+        <div class="nav-logo">
           <img src="./images/logo.png" alt="">
-          <a class="btn btn-ghost normal-case text-xl text-white">Fruit Brust</a>
         </div>
-        <div class=" navbar-end ">
-          <input type="text" 
-            class="w-2/5 py-2 px-4 pr-10 mr-8 rounded-3xl border border-gray-300"
-            placeholder="Search Here">
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="logo-name">
+          <h1>Fruit Brust</h1>
         </div>
+      </div>
+      <div class="navbar-search">
+        <input type="text" placeholder="Search...">
+        <i class="fa fa-search"></i> 
+      </div>
+      
 
     </nav>
+  
+</nav>
 
 
-  </header>
+</header>
 
   <!-- Banner Section Start Here -->
 
@@ -180,7 +237,7 @@
 
   <section class="flex gap-6 justify-center mt-12">
     <div class="w-[342px] h-[350px] bg-white text-center rounded-lg container">
-      <img class="ml-28" src="/images/fruit6.png" alt="">
+      <img class="ml-28" src="./images/fruit6.png" alt="">
       <p class="font-semibold mt-5">12.90$ - 18.85$</p>
       <hr class="w-[244px] ml-11 mt-3">
       <p class="mt-5 text-gray-500">Apples</p>
